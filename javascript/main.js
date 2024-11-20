@@ -32,3 +32,7 @@ function scrollToSection(sectionId) {
         function openLink(url) {
             window.open(url, '_blank');
         }
+
+<script>
+    document.getElementById('vid').play();
+</script>
