@@ -32,3 +32,13 @@ function scrollToSection(sectionId) {
         function openLink(url) {
             window.open(url, '_blank');
         }
+
+document.addEventListener('DOMContentLoaded', function () {
+  const video = document.querySelector('video');
+  if (video) {
+    video.muted = true; // ミュート設定を有効化
+    video.play().catch(error => {
+      console.error('Video autoplay failed:', error);
+    });
+  }
+});
