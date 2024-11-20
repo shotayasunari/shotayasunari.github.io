@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>shota_yasunari - result1</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="../css/result.css">
+</head>
+<body>
+    <div id="result" class="big-bg">
+        <header class="page-header wrapper">
+            <nav>
+                <ul class="main-nav">
+                    <li onclick="location.href='../shota_yasunari.html'">TOP</li>
+                    <li onclick="openLinkAndScroll('../shota_yasunari.html', 'result')">RESULT</li>
+                    <li onclick="openLinkAndScroll('../shota_yasunari.html', 'gallery')">PICK UP</li>
+                    <li onclick="openLinkAndScroll('../shota_yasunari.html', 'schedule')">SCHEDULE</li>
+                    <li onclick="openLinkAndScroll('../shota_yasunari.html', 'sns')">SNS</li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="wrapper">
+            <h2 class="page-title">Result</h2>
+        </div>
+    </div>
+
+    <div class="result-contents wrapper">
+        <article id="article-content">
+            <header class="post-info">
+                <h2 class="post-title">FISU 世界学生選手権 団体5位</h2>
+                <p class="post-date">8/30 <span>2024</span></p>
+                <p class="post-cat">カテゴリー：代表戦</p>
+            </header>
+            <img src="../img/main/result/r1.jpg" alt="大会写真">
+            <p>2度目の世界学生に挑戦してきました。</p>
+
+			<p>開催地は世界一危険な都市とも言われる南アフリカ・ヨハネスブルグでしたが、実際に行ってみるとそんな気配をほとんど感じさせないくらい素晴らしい環境が用意されていて何不自由なく10日間を過ごすことができました。</p>
+
+
+			<p>結果は個人戦プレート優勝(17位)、団体戦5位と目標にしていたメダル獲得には届くことができませんでした。</p>
+
+
+			<p>最後の世界学生だったので悔しい思いは強いですが、2年前初めてエジプトの世界学生に出場した時とは違い、間違いなく世界と戦える力はついてきたと感じました。この2年間、プロツアーを回り日本代表の試合にも出場してきた経験値というのは大きな成長に繋がっていて、まだまだ世界との差を縮められると思えた大会になりました。</p>
+
+
+			<p>そして今大会一緒に行ってくれた4人には本当に感謝しています。団体戦に出場する国の中で唯一コーチがいなかったのは日本だけでしたが、そんな状況でも自分がベストを尽くせたのはこのチームのメンバーがいたからです。チームマネージャーを担当してくれたあゆみ、最年少でも女子の一番手として戦ってくれたくるみちゃん、団体ではめちゃくちゃ頼りになった優太、そして何より連れてきてくれた徳ちゃんには感謝しています。</p>
+
+
+			<p>そもそもこの大会は彼が支援金の内定を勝ち取ってくれなかったら自分は行くことがなかった遠征でした。彼はこの大会を最後にスカッシュの大会から身を引いてしまいますが、この4年間一緒にたくさんの大会に出れて本当に良かったと思っています。かけがえのない経験ができて、何より最後に最高の遠征に連れて行ってもらえたことには感謝しかありません。またいつか大会に出たいと思うような時が来ると思うので、その時はいつでも戻って来てくれると嬉しいです。</p>
+
+
+			<p>自分はこれが最後の世界学生ですが、2年後も日本チームが出場してくれることを願っています。世界中の同世代のスカッシュ仲間と繋がる最高の機会になると思っているので、これからの学生スカッシュを担う選手にはぜひ挑戦してもらいたいです。</p>
+
+
+			<p>たくさんの応援ありがとうございました。</p>
+
+        </article>
+
+        <aside>
+            <h3 class="sub-title">カテゴリー</h3>
+            <ul class="sub-menu">
+                <li><a href="#" onclick="filterCategory('代表戦')">代表戦</a></li>
+                <li><a href="#" onclick="filterCategory('海外プロツアー')">海外プロツアー</a></li>
+                <li><a href="#" onclick="filterCategory('国内ツアー')">国内ツアー</a></li>
+                <li><a href="#" onclick="filterCategory('お知らせ')">お知らせ</a></li>
+            </ul>
+
+            <h3 class="sub-title">大会について</h3>
+            <p>大会は主に代表戦、海外プロツアー、国内ツアーの３つに分けられる。代表戦は年間2～3回大会。海外プロツアーは年間11～15大会。国内ツアーは年間5～10大会程度ある。海外プロツアーと国内ツアーにはそれぞれランキングがあり、それら上位の選手が日本代表に選出され、代表戦に派遣される。</p>
+        </aside>
+    </div>
+</body>
+
+<footer>
+    <div class="footer-content wrapper">
+        <p>&copy; SHOTA YASUNARI All Rights Reserved.</p>
+    </div>
+</footer>
+
+<script src="../javascript/result.js"></script>
+
+</html>
