@@ -1,0 +1,1 @@
+# shotayasunari.github.io
