@@ -337,7 +337,6 @@ span.ranking-link:hover::after {
     }
 }
 
-
 /* ------ ギャラリー　スライドショー ------ */
 .slider {
     width:94%;
@@ -359,7 +358,6 @@ span.ranking-link:hover::after {
 	transform: scale(1);
 	opacity: 1;
 }
-
 
 /* ------ ギャラリー　矢印 ------ */
 .slick-prev, 
@@ -522,7 +520,6 @@ span.ranking-link:hover::after {
     display: block;
     margin: 0 auto; /* 画像を中央に配置 */
 }
-
 
 /* ------ スポンサー ------ */
 .sponsor-images {
