@@ -14,6 +14,14 @@
         <video autoplay muted playsinline class="bg-video">
   　　　　　<source src="https://github.com/user-attachments/assets/034f7db3-55b2-47dc-8578-116308b282c6" type="video/mp4">
         </video>
+    <script>
+  const video = document.getElementById('myVideo');
+
+  // 動画の再生終了時に再生を停止
+  video.addEventListener('ended', () => {
+    video.pause(); // 再生を完全停止
+  });
+</script>
 
         <header class="page-header wrapper">
             <h1><img class="logo" src="img/main/logo/logo.png" alt="logo"></h1>
