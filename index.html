@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>shota_yasunari</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="icon" type="image/png" href="img/main/favicon/favicon.png">
+</head>
+
+<body>
+    <div id="home" class="big-bg">
+        <video autoplay muted playsinline class="bg-video">
+            <source src="video/main-video.mp4" type="video/mp4">
+        </video>
+
+        <header class="page-header wrapper">
+            <h1><img class="logo" src="img/main/logo/logo.png" alt="logo"></h1>
+            <nav>
+                <ul class="main-nav">
+                    <li onclick="scrollToSection('home')">TOP</li>
+                    <li onclick="scrollToSection('result')">RESULT</li>
+                    <li onclick="scrollToSection('gallery')">PICK UP</li>
+                    <li onclick="scrollToSection('schedule')">SCHEDULE</li>
+                    <li onclick="scrollToSection('sns')">SNS</li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="home-content wrapper">
+            <a class="button" href="profile/profile.html">PROFILE</a>
+        </div><!-- /.home-content -->
+    </div><!-- /#home -->
+
+    <main>
+        <div class="ranking-section">
+            <div class="ranking-item">
+                <a href="https://squash.or.jp/ranking/man_01.html" target="_blank">
+                    <p>Japan Ranked</p>
+                    <span>#004</span>
+                </a>
+            </div>
+            <div class="ranking-item">
+                <a href="https://www.psaworldtour.com/player/shota-yasunari/" target="_blank">
+                    <p>World Ranked</p>
+                    <span>#238</span>
+                </a>
+            </div>
+        </div>
+
+        <section id="youtube">
+            <h1>MATCH VIDEO</h1>
+            <div class="youtube-container">
+                <div class="youtube-video">
+                    <a href="https://youtu.be/KNneBzx8ECo?si=5R8xa9jS3OazqMrR" target="_blank">
+                        <img src="img/main/youtube/y1.jpeg" alt="YOUTUBE">
+                    </a>
+                    <p>JAPAN VS SWISS</p>
+                </div>
+                
+                <div class="youtube-video">
+                    <a href="https://youtu.be/lRSJWxGb-yI?si=6oD1MC3Xi-Y2DYQK" target="_blank">
+                        <img src="img/main/youtube/y2.jpeg" alt="YOUTUBE">
+                    </a>
+                    <p>全日本2023準決勝</p>
+                </div>
+
+                <div class="youtube-video">
+                    <a href="https://www.youtube.com/live/z-2VgD8-Jb8?si=hQ8xXp11xdtkSFTj&t=12100" target="_blank">
+                        <img src="img/main/youtube/y3.jpg" alt="YOUTUBE">
+                    </a>
+                    <p>全日本学生2023決勝</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="result" class="wrapper grid">
+            <h1 class="result-heading">RESULT</h1>
+            <div class="item">
+                <a href="result/result1.html">
+                    <img src="img/main/result/r1.jpg" alt="結果">
+                    <p>8/30-9/10<br>FISU世界学生選手権 団体5位</p>
+                </a>
+            </div>
+            <div class="item">
+                <a href="result/result2.html">
+                    <img src="img/main/result/r2.jpg" alt="結果">
+                    <p>8/13-19<br>スリランカPSA3k ベスト4</p>
+                </a>
+            </div>
+            <div class="item">
+                <a href="result/result3.html">
+                    <img src="img/main/result/r3.jpg" alt="結果">
+                    <p>8/5-8<br>第49回関東学生選手権 優勝</p>
+                </a>
+            </div>
+            <div class="item">
+                <a href="result/result4.html">
+                    <img src="img/main/result/r4.jpg" alt="結果">
+                    <p>7/8-12<br>シンガポールPSA Satellite 準優勝</p>
+                </a>
+            </div>
+            <div class="item">
+                <a href="result/result5.html">
+                    <img src="img/main/result/r5.jpg" alt="結果">
+                    <p>7/2-8<br>WCEアジアダブルス選手権 9位</p>
+                </a>
+            </div>
+            <div class="item">
+                <a href="result/result6.html">
+                    <img src="img/main/result/r6.jpg" alt="結果">
+                    <p>6/10-17<br>第22回アジア選手権団体戦 第3位</p>
+                </a>
+            </div>
+        </section>
+
+        <section id="gallery">
+            <h1>PICK UP</h1>
+            <ul class="slider">
+                <li><img src="img/main/pickup/p1.jpeg" alt=""></li>
+                <li><img src="img/main/pickup/p2.jpeg" alt=""></li>
+                <li><img src="img/main/pickup/p3.jpeg" alt=""></li>
+                <li><img src="img/main/pickup/p4.jpeg" alt=""></li>
+                <li><img src="img/main/pickup/p5.jpeg" alt=""></li>
+                <li><img src="img/main/pickup/p6.jpeg" alt=""></li>
+            </ul>
+
+            <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+            <script src="javascript/top.js"></script>
+        </section>
+
+        <div id="schedule" class="list-container">
+            <h2 class="center"><span class="under">2024 SCHEDULE</span></h2>
+            <ul class="event-list">
+                <li class="event-item">
+                    <div class="event-date">11/28-31</div>
+                    <img src="img/main/schedule/challenger.jpg" alt="Volkswagen Bega Open 2024" class="event-image">
+                    <div class="event-details">
+                        <div class="event-name">Philippine Challenger Classic 2024</div>
+                        <div class="event-location">フィリピン・マニラ</div>
+                    </div>
+                </li>
+                <li class="event-item">
+                    <div class="event-date">11/21-24</div>
+                    <img src="img/main/schedule/jsa.jpg" alt="第53回全日本スカッシュ選手権大会" class="event-image">
+                    <div class="event-details">
+                        <div class="event-name">第53回全日本スカッシュ選手権大会</div>
+                        <div class="event-location">日本・岡山</div>
+                    </div>
+                </li>
+                <li class="event-item">
+                    <div class="event-date">12/2-5</div>
+                    <img src="img/main/schedule/jsa.jpg" alt="第51回全日本学生スカッシュ選手権大会" class="event-image">
+                    <div class="event-details">
+                        <div class="event-name">第51回全日本学生スカッシュ選手権大会</div>
+                        <div class="event-location">日本・横浜</div>
+                    </div>
+                </li>
+				<li class="event-item">
+                    <div class="event-date">12/2-5</div>
+                    <img src="img/main/schedule/jsa.jpg" alt="第51回全日本学生スカッシュ選手権大会" class="event-image">
+                    <div class="event-details">
+                        <div class="event-name">2024 WSF World Team Championships</div>
+                        <div class="event-location">香港・ハッピーバレー</div>
+                    </div>
+                </li>
+                <!-- Other events... -->
+            </ul>
+        </div><!-- /#schedule -->
+
+        <section id="sns">
+            <div class="sns-links">
+                <a href="https://x.com/shota_yasunari" target="_blank">
+                    <img src="img/main/sns/twitter.png" alt="Twitter">
+                </a>
+                <a href="https://www.instagram.com/shota_yasunari/" target="_blank">
+                    <img src="img/main/sns/instagram.png" alt="Instagram">
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100057463304000" target="_blank">
+                    <img src="img/main/sns/facebook.png" alt="Facebook">
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content wrapper">
+            <p>&copy; SHOTA YASUNARI All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="javascript/main.js"></script>
+</body>
+
+</html>
