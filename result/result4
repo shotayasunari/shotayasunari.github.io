@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>shota_yasunari - result1</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="../css/result.css">
+</head>
+<body>
+    <div id="result" class="big-bg">
+        <header class="page-header wrapper">
+            <nav>
+                <ul class="main-nav">
+                    <li onclick="location.href='../shota_yasunari.html'">TOP</li>
+                    <li onclick="openLinkAndScroll('../shota_yasunari.html', 'result')">RESULT</li>
+                    <li onclick="openLinkAndScroll('../shota_yasunari.html', 'gallery')">PICK UP</li>
+                    <li onclick="openLinkAndScroll('../shota_yasunari.html', 'schedule')">SCHEDULE</li>
+                    <li onclick="openLinkAndScroll('../shota_yasunari.html', 'sns')">SNS</li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="wrapper">
+            <h2 class="page-title">Result</h2>
+        </div>
+    </div>
+
+    <div class="result-contents wrapper">
+        <article id="article-content">
+            <header class="post-info">
+                <h2 class="post-title">シンガポールPSA Satellite　準優勝</h2>
+                <p class="post-date">7/8 <span>2024</span></p>
+                <p class="post-cat">カテゴリー：海外プロツアー</p>
+            </header>
+            <img src="../img/main/result/r4.jpg" alt="大会写真">
+            <p>海外サテライト4度目の準優勝でした。</p>
+
+
+			<p>昨年シンガポールのサテライトでは2大会連続準優勝で優勝まであと1歩届かなかったのですが、今大会もその壁を越えることができませんでした。</p>
+
+
+			<p>自分の不甲斐なさを感じたし、今の自分の悪いところが出た決勝戦でした。かなり暑さのあるコートで最後まで集中力が持たなかったことが一番の敗因ですが、それを考慮して戦術を組み立てることができていれば間違いなく勝機はあった試合でした。</p>
+
+
+			<p>ただ今大会久しぶりにサテライトのカテゴリーに出場し、勝つ経験を積めたことで、自分の得点パターンや強みを再認識できたことはよかったと感じています。今後はその強みをさらに伸ばしていくことが必要だと思うのでそれに合わせてトレーニングをしていければと思います。</p>
+
+
+			<p>明日からはTACの試合があり、帰国直後の大会になりますが一戦一戦集中して結果にこだわって勝負していきたいと思います。</p>
+
+
+			<p>まだまだ2024年多くの大会が残っているので、ここから巻き返せるように頑張りたいです。</p>
+
+
+			<p>応援ありがとうございました。</p>
+        </article>
+
+        <aside>
+            <h3 class="sub-title">カテゴリー</h3>
+            <ul class="sub-menu">
+                <li><a href="#" onclick="filterCategory('代表戦')">代表戦</a></li>
+                <li><a href="#" onclick="filterCategory('海外プロツアー')">海外プロツアー</a></li>
+                <li><a href="#" onclick="filterCategory('国内ツアー')">国内ツアー</a></li>
+                <li><a href="#" onclick="filterCategory('お知らせ')">お知らせ</a></li>
+            </ul>
+
+            <h3 class="sub-title">大会について</h3>
+            <p>大会は主に代表戦、海外プロツアー、国内ツアーの３つに分けられる。代表戦は年間2～3回大会。海外プロツアーは年間11～15大会。国内ツアーは年間5～10大会程度ある。海外プロツアーと国内ツアーにはそれぞれランキングがあり、それら上位の選手が日本代表に選出され、代表戦に派遣される。</p>
+        </aside>
+    </div>
+</body>
+
+<footer>
+    <div class="footer-content wrapper">
+        <p>&copy; SHOTA YASUNARI All Rights Reserved.</p>
+    </div>
+</footer>
+
+<script src="../javascript/result.js"></script>
+
+</html>
