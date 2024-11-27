@@ -144,14 +144,11 @@ span.ranking-link:hover::after {
     z-index: -1; /* 背景に配置 */
 }
 
-/* スマホ対応のレスポンシブ設定 */
+/* スマホ（縦画面）向けのスタイル */
 @media screen and (max-width: 768px) {
     .bg-video {
-        object-fit: contain; /* スマホでは全体を表示 */
-    }
-    
-    .home-content {
-        top: 120px; /* スマホでボタンを少し上に移動 */
+        object-fit: contain; /* スマホ画面では余白を許容しつつ、全動画を表示 */
+        background-color: #000; /* 余白部分の背景を黒に設定 */
     }
 }
 
