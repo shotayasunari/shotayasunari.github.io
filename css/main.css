@@ -133,15 +133,26 @@ span.ranking-link:hover::after {
 	background-repeat: no-repeat;
 }
 
-/* --- 動画の設定 --- */
+/* 動画の設定 */
 .bg-video {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    z-index: -1; /* 背景に表示するため */
+    object-fit: cover; /* 縦横比を保ちながら全体を埋める */
+    z-index: -1; /* 背景に配置 */
+}
+
+/* スマホ対応のレスポンシブ設定 */
+@media screen and (max-width: 768px) {
+    .bg-video {
+        object-fit: contain; /* スマホでは全体を表示 */
+    }
+    
+    .home-content {
+        top: 120px; /* スマホでボタンを少し上に移動 */
+    }
 }
 
 /* --- #home コンテンツのデザイン --- */
