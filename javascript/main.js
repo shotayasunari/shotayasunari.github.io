@@ -12,13 +12,29 @@ $('.slider').slick({
 	});
 
 document.addEventListener('DOMContentLoaded', function () {
-  const video = document.querySelector('video');
-  if (video) {
-    video.muted = true; // ミュート設定を有効化
-    video.play().catch(error => {
-      console.error('Video autoplay failed:', error);
-    });
-  }
+    const video = document.querySelector('video');
+    if (video) {
+        // 動画の再生とミュート設定
+        video.muted = true;
+        video.play().catch(error => {
+            console.error('Video autoplay failed:', error);
+        });
+
+        // スマホ向けサイズ調整
+        function adjustVideoSize() {
+            if (window.innerWidth <= 768) {
+                video.style.objectFit = 'contain'; // モバイル向けの調整
+            } else {
+                video.style.objectFit = 'cover'; // PC向け
+            }
+        }
+
+        // 初回実行
+        adjustVideoSize();
+
+        // ウィンドウリサイズ時に再調整
+        window.addEventListener('resize', adjustVideoSize);
+    }
 });
 
 document.addEventListener('DOMContentLoaded', function () {
