@@ -20,17 +20,25 @@ document.addEventListener('DOMContentLoaded', function () {
             console.error('Video autoplay failed:', error);
         });
 
-window.addEventListener('resize', () => {
+document.addEventListener('DOMContentLoaded', function () {
     const video = document.querySelector('.bg-video');
-    if (window.innerWidth < 768 && window.innerHeight > window.innerWidth) {
-        // スマホの縦画面
-        video.style.objectFit = 'contain';
-        video.style.backgroundColor = '#000';
-    } else {
-        // その他の画面
-        video.style.objectFit = 'cover';
-        video.style.backgroundColor = 'transparent';
-    }
+    const adjustVideoSize = () => {
+        if (window.innerWidth < 768 && window.innerHeight > window.innerWidth) {
+            // スマホの縦画面
+            video.style.objectFit = 'contain';
+            video.style.backgroundColor = '#000';
+        } else {
+            // その他の画面
+            video.style.objectFit = 'cover';
+            video.style.backgroundColor = 'transparent';
+        }
+    };
+
+    // 初期化
+    adjustVideoSize();
+
+    // リサイズイベントで動的に変更
+    window.addEventListener('resize', adjustVideoSize);
 });
 
 document.addEventListener('DOMContentLoaded', function () {
