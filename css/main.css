@@ -74,7 +74,6 @@ nav li:hover::after {
     margin: 10px 0 42px;
 	color: #fff;
 }
-
 span.ranking-link {
     position: relative;
     text-decoration: none;
@@ -110,7 +109,6 @@ span.ranking-link:hover::after {
 
 /* ------ プロフィール　ボタン ------ */
 .button {
-	position: relative;
 	font-size: 1.375rem;
 	background: #090442;
 	color: #fff;
@@ -133,23 +131,15 @@ span.ranking-link:hover::after {
 	background-repeat: no-repeat;
 }
 
-/* 動画の設定 */
+/* --- 動画の設定 --- */
 .bg-video {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* 縦横比を保ちながら全体を埋める */
-    z-index: -1; /* 背景に配置 */
-}
-
-/* スマホ（縦画面）向けのスタイル */
-@media screen and (max-width: 768px) {
-    .bg-video {
-        object-fit: contain; /* スマホ画面では余白を許容しつつ、全動画を表示 */
-        background-color: #000; /* 余白部分の背景を黒に設定 */
-    }
+    object-fit: cover;
+    z-index: -1; /* 背景に表示するため */
 }
 
 /* --- #home コンテンツのデザイン --- */
@@ -345,6 +335,7 @@ span.ranking-link:hover::after {
     }
 }
 
+
 /* ------ ギャラリー　スライドショー ------ */
 .slider {
     width:94%;
@@ -366,6 +357,7 @@ span.ranking-link:hover::after {
 	transform: scale(1);
 	opacity: 1;
 }
+
 
 /* ------ ギャラリー　矢印 ------ */
 .slick-prev, 
@@ -528,6 +520,7 @@ span.ranking-link:hover::after {
     display: block;
     margin: 0 auto; /* 画像を中央に配置 */
 }
+
 
 /* ------ スポンサー ------ */
 .sponsor-images {
