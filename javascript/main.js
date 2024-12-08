@@ -12,36 +12,6 @@ $('.slider').slick({
 	});
 
 document.addEventListener('DOMContentLoaded', function () {
-    const video = document.querySelector('video');
-    if (video) {
-        // 動画の再生とミュート設定
-        video.muted = true;
-        video.play().catch(error => {
-            console.error('Video autoplay failed:', error);
-        });
-
-document.addEventListener('DOMContentLoaded', function () {
-    const video = document.querySelector('.bg-video');
-    const adjustVideoSize = () => {
-        if (window.innerWidth < 768 && window.innerHeight > window.innerWidth) {
-            // スマホの縦画面
-            video.style.objectFit = 'contain';
-            video.style.backgroundColor = '#000';
-        } else {
-            // その他の画面
-            video.style.objectFit = 'cover';
-            video.style.backgroundColor = 'transparent';
-        }
-    };
-
-    // 初期化
-    adjustVideoSize();
-
-    // リサイズイベントで動的に変更
-    window.addEventListener('resize', adjustVideoSize);
-});
-
-document.addEventListener('DOMContentLoaded', function () {
             fetch('main.json')
                 .then(response => response.json())
                 .then(data => {
