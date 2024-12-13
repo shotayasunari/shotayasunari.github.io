@@ -142,6 +142,30 @@ span.ranking-link:hover::after {
     z-index: -1; /* 背景に表示するため */
 }
 
+@media screen and (max-width: 768px) {
+	.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* 背景に表示するため */
+}
+}
+
+@media screen and (max-width: 480px) {
+	.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* 背景に表示するため */
+}
+}
+
 /* --- #home コンテンツのデザイン --- */
 #home {
     position: relative;
