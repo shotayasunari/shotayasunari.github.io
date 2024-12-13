@@ -25,10 +25,11 @@ document.addEventListener('DOMContentLoaded', function () {
         });
 
 function scrollToSection(sectionId) {
-            const section = document.getElementById(sectionId);
-            section.scrollIntoView({ behavior: 'smooth' });
-        }
-
+    document.getElementById(sectionId).scrollIntoView({
+        behavior: "smooth", 
+        block: "start"
+    });
+}
         function openLink(url) {
             window.open(url, '_blank');
         }
